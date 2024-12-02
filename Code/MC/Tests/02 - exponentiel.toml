@@ -1,0 +1,42 @@
+[simulation]
+#Test case : 1 -> u_0 = 5.0, 2 -> heaviside entre 0.4 et 0.6
+test_case = 2
+
+#Solution Type
+solutionType = "time"
+
+#Number of dimensions
+nbDims = 1
+
+#Number of MC particles 
+nbMC = 100000
+
+#Final time of the simulation
+finalTime = 1.0 
+
+# Time step of the simulation
+dt = 0.1
+
+#Speed of the wanted result
+v1 = 1.0
+v2 = 0.0
+v3 = 0.0
+
+# Sizes of the domain
+xmin = -1.0
+xmax = 1.0
+nbPtsX = 1
+ymin = -1.0
+ymax = 1.0
+nbPtsY = 20
+zmin = -1.0
+zmax = 1.0
+nbPtsZ = 10
+
+# Type of domain
+domainType = "periodic"
+
+[physics]
+sigmaS = 0.0
+sigmaT = 1.0
+modV = 0.2
